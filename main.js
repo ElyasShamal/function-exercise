@@ -181,3 +181,92 @@ function finalGrade(grade1, grade2, grade3) {
 console.log(finalGrade(99, 92, 95)) // Should print 'A'
 
 
+// function 12
+function lifePhase(age){
+if(age >= 0 && age <= 3){
+  return 'baby'
+}else if (age >= 4 && age <= 12){
+  return 'child'
+} else if (age >= 13 && age <= 19){
+   return 'teen'
+}else if (age >= 20 && age <= 64){
+  return 'adult'
+}else if (age >= 65 && age <= 140){
+  return 'senior citizen'
+}else {
+  return 'This is not a valid age';
+
+}
+}
+console.log(lifePhase(20))
+
+//function 13
+onst agreeOrDisagree = (stringOne, stringTwo) => {
+  if(stringOne === stringTwo){
+    return 'You agree!'
+  }else{
+    return 'You disagree!'
+  }
+}
+
+console.log(agreeOrDisagree("yep", "yep")) // Should print 'You agree!'
+
+//function 14
+
+function canIVote(age){
+if(age >= 18){
+  return true
+}else{
+  return false
+}
+}
+
+//function 15
+console.log(canIVote(19)) 
+
+const greetWorld = () => {
+  return 'Hello, World!'
+}
+
+console.log(greetWorld())
+
+// function 16
+const colorMessage = (favoriteColor, shirtColor) => {
+
+  if (favoriteColor  === shirtColor){
+    return "The shirt is your favorite color!";
+  } else{
+    return "That is a nice color."
+  }
+}
+
+console.log(colorMessage("blue", "blue"))
+
+// function 17
+
+const isEven = (number) => {
+  if(number % 2 === 0){
+    return true;
+  }else{
+    return false;
+  }
+}
+
+console.log(isEven(4))
+
+// function 18 
+
+const numberDigits = (x) => {
+  if (x >= 0 && x <= 9){
+    return `One digit: ${x}`;
+  }else if (x >= 10 && x <= 99){
+    return `Two digits: ${x}`;
+  }else{
+    return `The number is: ${x}`;
+  }
+}
+
+console.log(numberDigits(12)); //Output: Two digits: 12
+console.log(numberDigits(-202));
+
+
